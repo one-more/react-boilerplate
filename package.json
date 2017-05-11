@@ -1,0 +1,28 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate to start react project with redux, router and hot reload",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/one-more/react-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "boilerplate",
+    "starter-kit"
+  ],
+  "author": "one-more",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/one-more/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/one-more/react-boilerplate#readme",
+  "devDependencies": {
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
