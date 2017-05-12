@@ -3,7 +3,7 @@ import {configure, addDecorator} from '@kadira/storybook';
 
 require('normalize.css');
 
-const ctx = require.context('../app/', true, /.stories.jsx$/);
+const ctx = require.context('../app/', true, /.stories.js$/);
 
 const wrapper = (story) => <div style={{padding: 10}}>{story()}</div>;
 addDecorator(wrapper);
