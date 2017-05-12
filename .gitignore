@@ -1,4 +1,9 @@
-# Created by .ignore support plugin (hsz.mobi)
+node_modules/
 .idea/
-node_modules
-.cache
+dist/
+settings
+.cache/*
+!.cache/.gitkeep
+/npm-debug.log
+/coverage/
+.storybook/build/storybook_static/

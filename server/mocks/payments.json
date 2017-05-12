@@ -1,0 +1,25 @@
+{
+    "page": 1,
+    "balanceBegin": 1000.5,
+    "balanceEnd": 103244.5,
+    "operations": [
+        {
+            "credit": true,
+            "credAccount": 556,
+            "debAccount": 555,
+            "id": 1,
+            "date": "2017-04-12:15:47:39",
+            "comment": "sfdgfdggfd",
+            "amount": 15.32
+        },
+        {
+            "credit": true,
+            "credAccount": 554,
+            "debAccount": 554345,
+            "id": 2,
+            "date": "2017-04-12:15:47:39",
+            "comment": "sfdgfdggfd",
+            "amount": 123.32
+        }
+    ]
+}
