@@ -74,15 +74,12 @@
     "sass-loader": "~6.0.3",
     "style-loader": "~0.16.1",
     "stylefmt": "~5.3.1",
-    "stylelint": "~7.9.0",
-    "stylelint-config-standard": "~16.0.0",
-    "stylelint-order": "~0.4.3",
     "url-loader": "~0.5.7",
     "webpack": "~2.3.2",
     "webpack-dev-server": "~2.4.2"
   },
   "scripts": {
-    "eslint": "eslint \"app/**/*.js\" --cache --cache-location \"./.cache\"",
+    "eslint": "eslint \"app/**/*.js\" \"server/**/*.js\" --cache --cache-location \"./.cache\"",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "build": "cross-env NODE_ENV=production webpack",
@@ -93,15 +90,12 @@
     "start": "concurrently --kill-others \"npm run dev\" \"npm run server:dev\"",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open",
     "storybook": "cross-env NODE_ENV=development start-storybook -p 9001 -c .storybook",
-    "storybook:build": "cross-env NODE_ENV=production build-storybook -c .storybook -o .storybook/build",
-    "autofix_scss": "stylefmt --recursive 'app/**/*.scss'",
-    "stylelint": "stylelint \"app/**/*.scss\""
+    "storybook:build": "cross-env NODE_ENV=production build-storybook -c .storybook -o .storybook/build"
   },
   "pre-commit": {
     "silent": true,
     "run": [
       "eslint",
-      "stylelint",
       "test"
     ]
   },
@@ -141,7 +135,7 @@
     "cacheDirectory": "<rootDir>/.cache",
     "testEnvironment": "node",
     "moduleNameMapper": {
-      "\\.scss$": "<rootDir>/.mocks/style.js",
+      "\\.sass$": "<rootDir>/.mocks/style.js",
       "\\.path$": "<rootDir>/.mocks/path.js"
     }
   },

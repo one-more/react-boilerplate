@@ -1,6 +1,7 @@
+// @flow
+
 import React, {PureComponent, PropTypes} from 'react'
-import './generic-icon.scss'
-import classNames from 'classnames'
+import './generic-icon.sass'
 
 export class GenericIcon extends PureComponent {
     static propTypes = {
@@ -20,9 +21,7 @@ export class GenericIcon extends PureComponent {
 
         return (
             <svg
-                className={classNames({
-                    'generic-icon': true
-                })}
+                className="generic-icon"
                 width={width}
                 height={height}
                 viewBox={`0 0 ${width} ${height}`}

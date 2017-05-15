@@ -57,7 +57,8 @@
         "react/jsx-filename-extension": 0,
         "semi": 0,
         "global-require": 0,
-        "import/first": 0
+        "import/first": 0,
+        "no-param-reassign": ["error", {"props": false}]
     },
     "settings": {
         "import/resolver": {

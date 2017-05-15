@@ -111,7 +111,7 @@ module.exports = {
                             options: {
                                 modules: true,
                                 importLoaders: 1,
-                                localIdentName: '[local]-[hash:base64:3]'
+                                localIdentName: '[local]'
                             }
                         },
                         'postcss-loader',

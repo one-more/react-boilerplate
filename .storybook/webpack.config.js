@@ -41,7 +41,7 @@ module.exports = function (storybookBaseConfig, env) {
                 {
                     test: /\.(sass|scss)$/,
                     include: [path.join(root, 'app'), path.join(root, 'app', 'modules'), path.join(root, 'app', 'stories')],
-                    loader: 'style!css?modules&importLoaders=1&localIdentName=[local]-[hash:base64:3]!' +
+                    loader: 'style!css?modules&importLoaders=1&localIdentName=[local]!' +
                     'postcss!resolve-url!sass?outputStyle=expanded'
                 }
             ]
