@@ -1,16 +1,9 @@
 [options]
 esproposal.decorators=ignore
-unsafe.enable_getters_and_setters=true
 
-module.system.node.resolve_dirname=app
+module.system.node.resolve_dirname=src
 module.system.node.resolve_dirname=node_modules
-
-module.name_mapper='^.*\.sass$' -> 'css-module-flow'
-module.name_mapper='^.*\.path$' -> '<PROJECT_ROOT>/.mocks/path.js'
 
 module.ignore_non_literal_requires=true
 
 suppress_comment=\\(.\\|\n\\)*\\$FlowIgnore
-
-[ignore]
-.*/stylelint/.*
