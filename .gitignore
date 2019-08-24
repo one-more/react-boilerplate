@@ -1,9 +1,7 @@
-node_modules/
-.idea/
-dist/
+node_modules
+.idea
+dist
 settings
-.cache/*
-!.cache/.gitkeep
-/npm-debug.log
-/coverage/
-.storybook/build/storybook_static/
+.cache
+npm-debug.log
+coverage

@@ -1,11 +1,20 @@
-## Quick start
+## scripts
 ````
-    git clone https://github.com/one-more/react-boilerplate.git .
+    npm run build
 ````
+production build
 
-## Features
-1. predefined environment including flow & jest.
-2. configured storybook
-3. hot reloading
-4. there are no tons of useless code as payload
-5. 'test' pre-commit hook
+````
+    npm start
+````
+start webpack-dev-server
+
+````
+    npm t
+````
+run tests with coverage (Jest)
+
+````
+    npm run lint
+````
+run linter (eslint)
