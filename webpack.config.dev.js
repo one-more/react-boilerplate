@@ -9,5 +9,6 @@ module.exports = merge(config, {
         compress: true,
         port: 3000,
         open: true,
+        historyApiFallback: true,
     },
 });
