@@ -7,6 +7,7 @@ module.exports = {
     },
     "setupFilesAfterEnv": ["<rootDir>/setupTests.js"],
     "moduleNameMapper": {
-        "\\.(css|sass|scss)$": "identity-obj-proxy"
-    }
+        "\\.(css|sass|scss)$": "identity-obj-proxy",
+        "~(.*)$": "<rootDir>/src/$1",
+    },
 };
