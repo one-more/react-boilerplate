@@ -5,3 +5,4 @@ settings
 .cache
 npm-debug.log
 coverage
+storybook-static
