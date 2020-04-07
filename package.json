@@ -90,7 +90,8 @@
     },
     "husky": {
         "hooks": {
-            "pre-push": "npm test && npm run test:visual && npm run lint && npm run check:types && npm run deps:validate"
+            "pre-push": "npm test && npm run test:visual && npm run lint && npm run check:types && npm run deps:validate",
+            "pre-commit": "npm run non-visual-checks && git add ."
         }
     }
 }
