@@ -17,6 +17,9 @@ module.exports = {
     rules: {
         'import/no-default-export': 2,
         'custom-rules/enforce-data-attributes': 2,
+        'import/no-duplicates': 2,
+        'import/order': 2,
+        'no-restricted-imports': ['error', { patterns: ['../*', '~/modules/*/*'] }],
     },
     settings: {
         react: {

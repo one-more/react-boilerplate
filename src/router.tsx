@@ -8,11 +8,7 @@ export function AppRouter(): JSX.Element {
     if (isAuthenticated()) {
         return (
             <Router>
-                <Route
-                    path="/"
-                    exact
-                    component={(): JSX.Element => <div data-target="index-page">Main page</div>}
-                />
+                <Route path="/" exact component={(): JSX.Element => <div data-target="index-page">Main page</div>} />
             </Router>
         );
     }
