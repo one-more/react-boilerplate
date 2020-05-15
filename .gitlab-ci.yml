@@ -10,4 +10,5 @@ test_scripts:
         - npm run lint
         - npm run check:types
         - npm run deps:validate
+        - npm run kill-mutants
     coverage: /All\sfiles.*?\s+(\d+.\d+)/

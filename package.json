@@ -54,7 +54,6 @@
         "eslint": "^6.2.2",
         "eslint-config-prettier": "^6.1.0",
         "eslint-import-resolver-webpack": "^0.12.1",
-        "eslint-plugin-custom-rules": "file:plugins/custom-rules",
         "eslint-plugin-import": "^2.20.2",
         "eslint-plugin-prettier": "^3.1.0",
         "eslint-plugin-react": "^7.14.3",
@@ -90,7 +89,6 @@
     },
     "husky": {
         "hooks": {
-            "pre-push": "npm test && npm run test:visual && npm run lint && npm run check:types && npm run deps:validate",
             "pre-commit": "npm run non-visual-checks && git add ."
         }
     }
