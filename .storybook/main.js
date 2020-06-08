@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     stories: ['../src/**/*.stories.tsx'],
     addons: [
@@ -16,6 +18,23 @@ module.exports = {
                 },
                 {
                     loader: require.resolve('react-docgen-typescript-loader'),
+                },
+            ],
+        });
+        config.module.rules = config.module.rules.filter(rule => rule.test.test('.svg') === false);
+        config.module.rules.push({
+            test: /\.(|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/,
+            loader: path.resolve(__dirname, '../node_modules/@storybook/core/node_modules/file-loader/dist/cjs.js'),
+            query: { name: 'static/media/[name].[hash:8].[ext]' },
+        });
+        config.module.rules.push({
+            test: /\.svg$/,
+            use: [
+                {
+                    loader: 'svg-inline-loader',
+                    options: {
+                        removeSVGTagAttrs: false,
+                    },
                 },
             ],
         });

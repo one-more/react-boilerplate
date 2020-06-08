@@ -55,5 +55,11 @@ module.exports = {
         tsConfig: {
             fileName: './tsconfig.json',
         },
+        webpackConfig: {
+            fileName: 'webpack.config.common.js',
+        },
+        exclude: {
+            path: '!svg-url-loader',
+        },
     },
 };

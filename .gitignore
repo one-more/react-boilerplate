@@ -6,3 +6,11 @@ settings
 npm-debug.log
 coverage
 storybook-static
+
+# stryker temp files
+.stryker-tmp
+stryker.log
+reports
+dependencygraph.svg
+stats.json
+.DS_Store

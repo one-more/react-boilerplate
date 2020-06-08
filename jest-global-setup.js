@@ -8,8 +8,6 @@ const http = require('http');
 const options = require('./serve.json');
 
 module.exports = async () => {
-    childProcess.spawnSync('npm', ['run', 'build']);
-
     return new Promise(resolve => {
         const server = http.createServer((request, response) => {
             return handler(request, response, options);

@@ -5,7 +5,7 @@ const config = require('./webpack.config.common');
 
 module.exports = merge(config, {
     performance: {
-        hints: 'error',
+        hints: 'warning',
         maxEntrypointSize: 550000,
         maxAssetSize: 550000,
     },
